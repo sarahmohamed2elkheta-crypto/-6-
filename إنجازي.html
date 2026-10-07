@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>إنجازي</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f1ff;--card:#fff;--tx:#2b1a5e;--mu:#6e63a0;--pr:#7c4dff;--ln:#e6e0fa;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17122b;--card:#231c40;--tx:#f1ecff;--mu:#b3a8dd;--ln:#3a3163}}
+:root[data-theme="dark"]{--bg:#17122b;--card:#231c40;--tx:#f1ecff;--mu:#b3a8dd;--ln:#3a3163}
+*{box-sizing:border-box;margin:0}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{background:var(--bg);color:var(--tx);font-family:Cairo,Tajawal,sans-serif;line-height:1.6}
+button,input{font:inherit;color:inherit}
+button{cursor:pointer;border:0;background:none}
+:focus-visible{outline:3px solid var(--pr);outline-offset:2px}
+.hero{background:linear-gradient(135deg,#6a3df0,#a78bfa 60%,#c4b5fd);color:#fff;text-align:center;padding:22px 16px 30px;border-radius:0 0 36px 36px;position:relative;overflow:hidden}
+.hero h1{font-size:44px;font-weight:800;line-height:1.2}
+.hero h1 i{font-style:normal;font-size:22px;vertical-align:top}
+.hero p{opacity:.95}
+.trophy{font-size:54px;filter:drop-shadow(0 6px 10px #0004)}
+.tag{display:inline-block;background:#fff;color:#6a3df0;border-radius:12px;padding:2px 12px;font-size:13px;font-weight:600;transform:rotate(-3deg);margin-top:6px}
+.sp{position:absolute;opacity:.7;font-size:18px}
+.tabs{position:sticky;top:0;z-index:5;display:flex;gap:8px;max-width:1100px;margin:-18px auto 0;padding:0 14px}
+.tabs button{flex:1;background:var(--card);border-radius:20px;padding:10px;font-weight:700;box-shadow:0 4px 14px #7c4dff33;position:relative;color:var(--mu)}
+.tabs button[aria-selected=true]{background:var(--pr);color:#fff}
+.bdg{background:#ff5c8a;color:#fff;border-radius:10px;font-size:12px;padding:0 7px;margin-inline-start:6px}
+main{max-width:1100px;margin:auto;padding:16px 14px 40px;display:grid;gap:16px}
+.g2{display:grid;gap:16px}
+@media(min-width:800px){.g2{grid-template-columns:1.4fr 1fr}}
+.card{background:var(--card);border-radius:24px;padding:18px;box-shadow:0 6px 24px #7c4dff1f}
+h2{font-size:20px;font-weight:800}
+.sub{color:var(--mu);font-size:14px;margin-bottom:10px}
+.sum{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.ring{position:relative;width:130px;height:130px;flex:none}
+.ring svg{transform:rotate(-90deg)}
+.ring circle{fill:none;stroke-width:12;stroke-linecap:round}
+.ring .bg{stroke:var(--ln)}
+.ring .fg{stroke:var(--pr);stroke-dasharray:327;animation:rg 1s ease-out}
+@keyframes rg{from{stroke-dashoffset:327}}
+.ring b{position:absolute;inset:0;display:grid;place-content:center;text-align:center;font-size:28px;line-height:1.1}
+.ring b small{font-size:11px;font-weight:600;color:var(--mu)}
+.st{flex:1;min-width:150px;display:grid;gap:6px}
+.st div{display:flex;justify-content:space-between;border-bottom:1px solid var(--ln);padding:4px 0}
+.st b{font-size:20px;color:var(--pr)}
+.pill{background:var(--bg);border-radius:14px;padding:8px 12px;font-size:14px;font-weight:600;margin-top:12px}
+.cd{font-size:13px;color:var(--mu);margin-top:6px}
+.champ{background:linear-gradient(160deg,#7c4dff,#a78bfa);color:#fff;text-align:center;position:relative}
+.champ .trophy{font-size:64px}
+.bar{height:14px;background:#ffffff40;border-radius:9px;overflow:hidden;margin:12px 0}
+.bar i,.pb i{display:block;height:100%;border-radius:9px;transition:width .6s}
+.bar i{background:linear-gradient(90deg,#ff9a9e,#fecfef)}
+.cta{background:#fff;color:#6a3df0;border-radius:18px;padding:10px 20px;font-weight:800;width:100%}
+.ed{position:absolute;top:10px;inset-inline-start:10px;background:#ffffff33;color:#fff;border-radius:14px;padding:3px 12px;font-size:13px}
+.scroll{display:flex;gap:12px;overflow-x:auto;padding:4px 2px 10px;scroll-snap-type:x mandatory}
+.sc{flex:1 0 160px;scroll-snap-align:start;border:1.5px solid;border-radius:20px;padding:14px;text-align:center;background:color-mix(in srgb,var(--c) 10%,var(--card));border-color:color-mix(in srgb,var(--c) 35%,var(--card))}
+.ic{width:46px;height:46px;border-radius:50%;background:var(--c);display:grid;place-content:center;font-size:22px;margin:0 auto 4px}
+.sc h3{font-size:17px}
+.pb{height:9px;background:var(--ln);border-radius:9px;overflow:hidden;margin:6px 0}
+.pb i{background:var(--c)}
+.sc small{display:block;color:var(--mu);font-size:13px}
+.btn{background:var(--c,var(--pr));color:#fff;border-radius:14px;padding:6px 14px;font-weight:700;font-size:14px;margin-top:8px;width:100%}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:color-mix(in srgb,var(--c) 14%,var(--card));border-radius:14px;padding:6px 14px;font-weight:600;font-size:14px}
+.chip.z{opacity:.5}.chip{border:1.5px solid var(--c)}.chip.sel{background:var(--c);color:#fff}
+.back{color:var(--pr);font-weight:700;margin-bottom:8px}
+.dh{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.dh .ic{margin:0}
+.dh>span{margin-inline-start:auto;background:var(--bg);border-radius:14px;padding:2px 12px;font-weight:800;color:var(--c)}
+.bx{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;text-align:center;margin-bottom:12px}
+.bx div{background:var(--bg);border-radius:14px;padding:8px 4px;font-size:13px}
+.bx b{display:block;font-size:22px;color:var(--c)}
+.qk{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 12px}
+.qk button{flex:1;min-width:56px;border:1.5px solid var(--ln);border-radius:14px;padding:6px;font-weight:800;background:var(--card)}
+.qk button:hover{border-color:var(--c)}
+.ls{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.ls button{border:1.5px solid var(--ln);border-radius:14px;padding:6px 12px;font-size:14px;transition:.2s}
+.ls button.on{background:var(--c);border-color:var(--c);color:#fff;transform:scale(1.04)}
+.row{border-radius:14px;padding:8px 12px;margin-bottom:6px;font-weight:600;font-size:14px}
+.row.g{background:#10b98122;color:#0f9b6e}.row.n{background:var(--bg);color:var(--mu)}
+.ok{background:#10b981;color:#fff;border-radius:16px;padding:10px;width:100%;font-weight:800;margin-top:6px}
+.big{font-size:56px;font-weight:800;color:var(--pr);line-height:1;text-align:center}
+.mid{text-align:center}
+.note{color:var(--mu);font-size:14px;margin-top:6px}
+.empty{text-align:center;padding:30px 18px}
+.empty .trophy{font-size:70px}
+.sec{background:var(--bg);border:1.5px solid var(--pr);color:var(--pr);border-radius:16px;padding:8px 18px;font-weight:700;margin-top:12px}
+#mod{position:fixed;inset:0;background:#0007;display:none;place-items:center;z-index:20;padding:14px}
+#mod.on{display:grid}
+.mb{background:var(--card);border-radius:24px;padding:18px;width:100%;max-width:520px;max-height:90vh;overflow:auto}
+.mr{display:grid;grid-template-columns:1fr 64px 64px 36px;gap:6px;margin-bottom:6px;align-items:center}
+.mr input{border:1.5px solid var(--ln);border-radius:10px;padding:5px 8px;background:var(--bg);width:100%}
+.mr.h{font-size:12px;color:var(--mu)}
+.ma{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.ma button{flex:1;border-radius:14px;padding:8px;font-weight:700;background:var(--bg)}
+.ma .p{background:var(--pr);color:#fff}
+.ma .d{color:#e11d48}
+#toast{position:fixed;bottom:calc(20px + env(safe-area-inset-bottom,0px));left:50%;transform:translate(-50%,120px);background:var(--tx);color:var(--bg);padding:10px 20px;border-radius:18px;font-weight:700;transition:.35s;z-index:30;max-width:90vw;text-align:center}
+#toast.on{transform:translate(-50%,0)}
+.cf{position:fixed;top:-20px;width:10px;height:14px;z-index:40;animation:fall 2.2s ease-in forwards;pointer-events:none}
+@keyframes fall{to{transform:translateY(105vh) rotate(720deg);opacity:.2}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header class="hero">
+<span class="sp" style="top:14px;right:18px">✨</span><span class="sp" style="top:60px;left:20px">⭐</span><span class="sp" style="bottom:36px;right:30px">☁️</span>
+<span class="tag">أبطال الأسبوع – مش بعيدين منك! 💗</span>
+<h1><i>👑</i><br>إنجازي</h1>
+<div class="trophy" aria-hidden="true">🏆</div>
+<p id="hs"></p>
+</header>
+<nav class="tabs" role="tablist">
+<button role="tab" id="tw" data-a="tab" data-v="w">🏆 إنجاز الأسبوع</button>
+<button role="tab" id="tb" data-a="tab" data-v="b">📚 المتراكم</button>
+</nav>
+<main id="app" role="tabpanel"></main>
+<div id="mod" role="dialog" aria-modal="true"></div>
+<div id="toast" role="status" aria-live="polite"></div>
+<script>
+// ===== Data & persistence =====
+const DEF=[["ar","العربي","#ec4899","📖",1],["sc","العلوم","#10b981","🧪",1],["ss","الدراسات","#8b5cf6","🌍",1],["ma","الرياضيات","#3b82f6","🧮",1],["en","English","#a855f7","🇬🇧",1]];
+const PAL=["#f59e0b","#ef4444","#14b8a6","#6366f1","#84cc16"];
+const mk=(id,name,c,ic,w,b=0)=>({id,name,color:c,icon:ic,wt:w,wd:Array(w).fill(false),bt:b,bd:0,on:true});
+const hn=n=>n==1?"حصة واحدة":n==2?"حصتين":n+" حصص";
+const fresh=()=>({v:3,picked:false,subjects:DEF.map(d=>mk(...d)),weekStart:0,streak:0,history:[],tab:"w",sel:null,m:"w"});
+let S;
+try{S=JSON.parse(localStorage.getItem("enjazy"))||fresh()}catch(e){S=fresh()}
+if(S.v<2){S.v=2;S.subjects.forEach(x=>{x.wt=1;x.wd=[!!x.wd[0]]})}
+if(S.v<3){S.v=3;S.picked=false;S.subjects.forEach(x=>x.on=true)}
+const save=()=>{try{localStorage.setItem("enjazy",JSON.stringify(S))}catch(e){}};
+const $=id=>document.getElementById(id);
+
+// ===== Derived values (single source of truth) =====
+const wd=s=>s.wd.filter(Boolean).length;
+const pc=(d,t)=>t?Math.round(d/t*100):0;
+const act=()=>S.subjects.filter(s=>s.on!==false);
+const sum=f=>act().reduce((a,s)=>a+f(s),0);
+const W=()=>({t:sum(s=>s.wt),d:sum(wd)});
+const B=()=>({t:sum(s=>s.bt),d:sum(s=>s.bd)});
+const cnt=(s,m)=>m=="w"?{t:s.wt,d:wd(s)}:{t:s.bt,d:s.bd};
+
+// ===== Weekly reset (week starts Saturday) =====
+function satOf(d){const x=new Date(d.getFullYear(),d.getMonth(),d.getDate());x.setDate(x.getDate()-((x.getDay()+1)%7));return x.getTime()}
+function roll(){
+  const cur=satOf(new Date());
+  if(S.weekStart&&S.weekStart!==cur){
+    const w=W();
+    S.history.push({date:S.weekStart,done:w.d,total:w.t,pct:pc(w.d,w.t)});
+    S.streak=w.t&&w.d==w.t?S.streak+1:0;
+    S.subjects.forEach(s=>s.wd=Array(s.wt).fill(false));
+    S.weekStart=cur;save();setTimeout(()=>toast("أسبوع جديد، فرصة جديدة 🌟"),600);
+  }else if(!S.weekStart){S.weekStart=cur;save()}
+}
+const daysLeft=()=>7-Math.round((new Date(satOf(new Date()))-0 && (Date.now()-S.weekStart)/864e5-0.5));
+
+// ===== UI helpers =====
+function toast(t){const e=$("toast");e.textContent=t;e.classList.add("on");clearTimeout(toast.h);toast.h=setTimeout(()=>e.classList.remove("on"),2600)}
+function confetti(n=40){const c=["#7c4dff","#ff5c8a","#fbbf24","#10b981","#3b82f6"];for(let i=0;i<n;i++){const e=document.createElement("i");e.className="cf";e.style.cssText=`left:${Math.random()*100}vw;background:${c[i%5]};animation-delay:${Math.random()*.5}s;border-radius:${i%2?"50%":"2px"}`;document.body.appendChild(e);setTimeout(()=>e.remove(),3000)}}
+const ring=(p,l)=>`<div class="ring"><svg width="130" height="130" viewBox="0 0 120 120"><circle class="bg" cx="60" cy="60" r="52"/><circle class="fg" cx="60" cy="60" r="52" style="stroke-dashoffset:${327*(1-p/100)}"/></svg><b>${p}%<small>${l}</small></b></div>`;
+const QUOTES=["اللي بتعمله دلوقتي هو اللي هيخليك تبقى من أبطال الأسبوع!! 💙","خطوة صغيرة كل يوم بتفرق أكتر مما تتخيل 🌱","مش لازم تخلص كله النهارده، المهم تبدأ 💪","كل حصة بتخلصها بتقولك: أنا قدها! ⭐","أبطال الأسبوع كانوا زيك بالظبط، بس كملوا 🏆"];
+
+// ===== Views =====
+function card(s,m){const{t,d}=cnt(s,m),p=pc(d,t);return`<div class="sc" style="--c:${s.color}"><div class="ic">${s.icon}</div><h3>${s.name}</h3><small>${m=="w"&&t==1?(d?"الحصة خلصت ✔":"حصة الأسبوع لسه"):d+" / "+t+" حصص"}</small><div class="pb"><i style="width:${p}%"></i></div><small>${p}% · ${t-d?`فاضلك ${hn(t-d)}`:"خلصت ✅"}</small><button class="btn" data-a="open" data-id="${s.id}" data-m="${m}">عرض التفاصيل</button></div>`}
+function chips(m){const l=act().filter(s=>cnt(s,m).t>0);return l.map(s=>{const r=cnt(s,m).t-cnt(s,m).d;return`<button class="chip ${r?"":"z"}" style="--c:${s.color}" data-a="open" data-id="${s.id}" data-m="${m}">${s.icon} ${s.name} · ${r?hn(r):"خلصت ✅"}</button>`}).join("")}
+function detail(m){
+  const s=S.subjects.find(x=>x.id==S.sel);if(!s||S.m!=m||!cnt(s,m).t)return"";
+  const{t,d}=cnt(s,m),p=pc(d,t),q=m=="w"?[1,2,3]:[1,2,3,5],one=m=="w"&&t==1;
+  return`<section class="card" id="det" style="--c:${s.color}"><button class="back" data-a="close">← العودة للمواد</button>
+  <div class="dh"><div class="ic">${s.icon}</div><div><h2>${s.name}</h2><div class="sub" style="margin:0">كل ${m=="w"?"حصة":"متراكم"} خلصته خطوة خطوة</div></div><span>${p}%</span></div>
+  <div class="bx"><div><b>${t}</b>${m=="w"?(t==1?"حصة الأسبوع":"حصص الأسبوع"):"اللي كان متراكم"}</div><div><b>${d}</b>خلصتها</div><div><b>${t-d}</b>المتبقي</div></div>
+  ${one?`<button class="ok" style="background:${d?"#10b981":"var(--c)"};margin:0 0 12px" data-a="tog" data-i="0" aria-pressed="${!!d}">${d?"✔ خلصت حصة الأسبوع (دوس للتراجع)":"علّم إنك خلصت حصة الأسبوع"}</button>`:`<b>⚡ أضف حصص أكتر</b><div class="qk">${q.map(k=>`<button data-a="add" data-k="${k}">+${k}</button>`).join("")}<button data-a="add" data-k="-1" aria-label="تراجع">−1 ↩</button></div>`}
+  ${one?"":m=="w"?`<b>حصص الأسبوع</b><div class="ls">${s.wd.map((x,i)=>`<button class="${x?"on":""}" data-a="tog" data-i="${i}" aria-pressed="${x}">${x?"✔":"○"} حصة ${i+1}</button>`).join("")}</div>`:`<b>تفاصيل المتراكم</b><div style="margin-top:6px"><div class="row g">خلصت ${d} حصص ✔</div><div class="row n">متبقي ${t-d} حصص</div></div>`}
+  <button class="ok" data-a="done">تم التحديث ✔</button></section>`}
+function picker(){
+  const a=act();
+  if(S.picked&&!S.chg)return`<section class="card"><div class="sum"><div style="flex:1;min-width:200px"><b>📚 موادك (${a.length}):</b> ${a.map(s=>s.icon+" "+s.name).join("، ")}<div class="note">نسبة الإنجاز بتتحسب على موادك دي بس 💜</div></div><button class="sec" style="margin:0" data-a="chg">غيّر موادك</button></div></section>`;
+  return`<section class="card"><h2>إنت مشترك في أنهي مواد؟ 📚</h2><div class="sub">اختار موادك بس، ونسبة الإنجاز هتتحسب عليها هي بس 💜</div><div class="chips">${S.subjects.map(s=>`<button class="chip ${s.on===false?"z":"sel"}" style="--c:${s.color}" data-a="sub" data-id="${s.id}" aria-pressed="${s.on!==false}">${s.on===false?"○":"✔"} ${s.icon} ${s.name}</button>`).join("")}</div><button class="ok" data-a="picked">${S.picked?"تمام ✔":"ابدأ ✔"}</button></section>`}
+function weekly(){
+  const w=W(),p=pc(w.d,w.t),left=Math.max(1,7-Math.floor((Date.now()-S.weekStart)/864e5)),win=w.t&&w.d==w.t;
+  const msg=win?"بطل الأسبوع 🏆":p<30?"ابدأ بخطوة صغيرة 💪":p<=70?"ماشي كويس!":"قربت من أبطال الأسبوع 🔥";
+  const L=act().filter(s=>s.wt>0);
+  return picker()+`<div class="g2"><section class="card"><h2>إنجاز الأسبوع 👀</h2><div class="sub">حصة واحدة من كل مادة الأسبوع ده</div>
+  <div class="sum">${ring(p,"نسبة إنجاز الأسبوع")}<div class="st"><div>حصص الأسبوع<b>${w.t}</b></div><div>اللي خلصته<b>${w.d}</b></div><div>المتبقي<b>${w.t-w.d}</b></div></div></div>
+  <div class="pill">${msg}</div><div class="cd">⏳ ${left==1?"آخر يوم في الأسبوع":"ينتهي الأسبوع بعد "+left+" أيام"}</div></section>
+  <section class="card champ"><button class="ed" data-a="edit">⚙️ تعديل المواد</button><div class="trophy">🏆</div><h2>أبطال الأسبوع</h2><div>كل حصة بتقربك أكتر من أبطال الأسبوع 👀</div><div class="bar"><i style="width:${p}%"></i></div><button class="cta" data-a="go">🚀 كمل إنجازك</button></section></div>
+  <section class="card" id="subs"><h2>مواد الأسبوع 📖</h2><div class="sub">${L.length} مواد، وحصة الأسبوع من كل مادة</div><div class="scroll">${L.map(s=>card(s,"w")).join("")}</div></section>
+  <section class="card"><h2>فاضلك إيه؟ 🎯</h2><div class="sub">شوف المواد اللي لسه فيها حصص</div><div class="chips">${chips("w")}</div></section>
+  ${detail("w")}
+  <div class="g2"><section class="card mid"><h2>إجمالي إنجازك 📊</h2><div class="big">${w.d}</div><b>حصص اتقفلت!</b><div class="note">العداد بيتحرك 💜</div><div class="pill">🔥 ${S.streak} أسابيع متتالية</div></section>
+  <section class="card mid"><h2>☀️ رسالة لك النهارده</h2><p style="margin:10px 0;font-weight:600">كل حصة بتخلصها بتقربك خطوة من قائمة أبطال الأسبوع 🏆</p><div class="note">👀 اسمك هيكون موجود فيها الأسبوع ده؟ ✨</div></section></div>`}
+function backlog(){
+  const b=B(),p=pc(b.d,b.t),L=act().filter(s=>s.bt>0);
+  const intro=`<div class="card"><h2>المتراكم 📚</h2><div class="sub" style="margin:0">عندك حصص قديمة لسه ما خلصتهاش؟ سجلها هنا وخلصها براحتك 💜</div></div>`;
+  if(!b.t)return intro+`<div class="card empty"><div class="trophy">🎉</div><h2>مفيش عندك متراكم! 🎉</h2><p class="sub">كمل على خطة الأسبوع</p><button class="sec" data-a="backlog">عندي متراكم وعايز أسجله</button></div>`;
+  return intro+`<section class="card"><h2>كشف حساب المتراكم 👀</h2><div class="sub">سجل الحصص اللي كان عندك متراكم وخلصتها</div><div class="sum">${ring(p,"نسبة التصفية")}<div class="st"><div>إجمالي المتراكم<b>${b.t}</b></div><div>اللي خلصته<b>${b.d}</b></div><div>المتبقي<b>${b.t-b.d}</b></div></div></div><div class="pill">${b.d==b.t?"خلصت المتراكم كله! 🎉":"كل حصة بتقفلها = خطوة أقرب 💪"}</div><button class="sec" data-a="backlog">✏️ تعديل المتراكم</button></section>
+  <section class="card"><h2>مواد المتراكم</h2><div class="scroll">${L.map(s=>card(s,"b")).join("")}</div></section>
+  <section class="card"><h2>فاضلك إيه؟ 🎯</h2><div class="chips" style="margin-top:8px">${chips("b")}</div></section>${detail("b")}`}
+function render(){
+  $("tw").setAttribute("aria-selected",S.tab=="w");$("tb").setAttribute("aria-selected",S.tab=="b");
+  const r=B().t-B().d;$("tb").innerHTML="📚 المتراكم"+(r>0?`<span class="bdg">${r}</span>`:"");
+  $("hs").textContent=S.tab=="w"?"كل حصة بتقربك من أبطال الأسبوع ✨":"كان عندك متراكم … وخلصته 💗";
+  $("app").innerHTML=S.tab=="w"?weekly():backlog();
+}
+
+// ===== State changes + celebrations =====
+function change(s,m,fn){
+  const before=cnt(s,m),wb=W();fn();save();render();
+  const a=cnt(s,m),wa=W();
+  if(a.t&&a.d==a.t&&before.d<before.t){
+    if(m=="b"&&B().d==B().t){confetti(90);toast("خلصت المتراكم كله! 🎉")}
+    else if(m=="w"&&wa.d==wa.t&&wb.d<wb.t){confetti(120);toast("بطل الأسبوع 🏆 خلصت كل حصصك!")}
+    else{confetti(45);toast(`برافو! خلصت ${s.name} 🎉`)}
+  }
+}
+function setCount(s,m,n){
+  n=Math.max(0,Math.min(cnt(s,m).t,n));
+  if(m=="w")s.wd=s.wd.map((_,i)=>i<n);else s.bd=n;
+}
+
+// ===== Edit modal =====
+function modal(kind){
+  const full=kind=="edit",row=s=>`<div class="mr" data-id="${s?s.id:""}"><input class="n" value="${s?s.name:""}" aria-label="اسم المادة" ${full?"":"readonly"}>${full?`<input class="w" type="number" min="0" max="50" value="${s?s.wt:5}" aria-label="حصص الأسبوع">`:"<span></span>"}<input class="b" type="number" min="0" max="50" value="${s?s.bt:0}" aria-label="المتراكم">${full?`<button data-a="del" aria-label="حذف">🗑</button>`:"<span></span>"}</div>`;
+  $("mod").innerHTML=`<div class="mb"><h2>${full?"تعديل المواد ⚙️":"سجل المتراكم 📚"}</h2><div class="sub">${full?"غيّري الاسم أو عدد الحصص (من 0 إلى 50)":"اكتب عدد الحصص المتراكمة لكل مادة (0 = مفيش)"}</div>
+  <div class="mr h"><span>المادة</span><span>${full?"الأسبوع":""}</span><span>متراكم</span><span></span></div><div id="rows">${(full?S.subjects:act()).map(row).join("")}</div>
+  <div class="ma">${full?`<button data-a="addrow">➕ مادة جديدة</button>`:""}<button class="p" data-a="msave">حفظ</button><button data-a="mclose">إلغاء</button>${full?`<button class="d" data-a="reset">إعادة ضبط كل شيء</button>`:""}</div></div>`;
+  $("mod").dataset.k=kind;$("mod").classList.add("on");
+  $("mod").dataset.tpl=row(null).replace(/"/g,"&quot;");
+}
+function msave(){
+  const rows=[...document.querySelectorAll("#rows .mr")],full=$("mod").dataset.k=="edit",out=[];
+  for(const r of rows){
+    const n=r.querySelector(".n").value.trim(),b=+r.querySelector(".b").value,w=full?+r.querySelector(".w").value:null;
+    if(!n)return toast("اكتب اسم المادة");
+    if(!(b>=0&&b<=50)||!Number.isInteger(b)||(full&&!(w>=0&&w<=50&&Number.isInteger(w))))return toast("الأرقام من 0 لـ 50 بس");
+    const old=S.subjects.find(s=>s.id==r.dataset.id);
+    if(old){old.name=n;old.bt=b;old.bd=Math.min(old.bd,b);if(full){old.wt=w;old.wd=Array.from({length:w},(_,i)=>!!old.wd[i])}out.push(old)}
+    else{const i=out.length+S.subjects.length;out.push(mk("n"+Date.now()+i,n,PAL[i%5],"⭐",w,b))}
+  }
+  if(!out.length)return toast("لازم تسيبي مادة واحدة على الأقل");
+  if(full)S.subjects=out;if(!S.subjects.find(s=>s.id==S.sel))S.sel=null;
+  save();$("mod").classList.remove("on");render();toast("اتحفظ التعديل ✅");
+}
+
+// ===== Events =====
+document.addEventListener("click",e=>{
+  const el=e.target.closest("[data-a]");if(!el)return;
+  const a=el.dataset.a,d=el.dataset,s=S.subjects.find(x=>x.id==S.sel);
+  if(a=="tab"){S.tab=d.v;S.sel=null;save();render();scrollTo(0,0)}
+  else if(a=="open"){S.sel=d.id;S.m=d.m;render();$("det").scrollIntoView({behavior:"smooth",block:"start"})}
+  else if(a=="close"){S.sel=null;render()}
+  else if(a=="add"){const k=+d.k;change(s,S.m,()=>setCount(s,S.m,cnt(s,S.m).d+k))}
+  else if(a=="tog"){change(s,"w",()=>s.wd[+d.i]=!s.wd[+d.i])}
+  else if(a=="done"){save();toast("اتحفظ إنجازك 🎉")}
+  else if(a=="go"){$("subs").scrollIntoView({behavior:"smooth"})}
+  else if(a=="sub"){const x=S.subjects.find(y=>y.id==d.id);if(x.on!==false&&act().length==1)return toast("لازم تختار مادة واحدة على الأقل");x.on=x.on===false;if(S.sel==x.id)S.sel=null;save();render()}
+  else if(a=="picked"){S.picked=true;S.chg=false;save();render();toast("اتحفظت موادك ✅")}
+  else if(a=="chg"){S.chg=true;render()}
+  else if(a=="edit")modal("edit");
+  else if(a=="backlog")modal("backlog");
+  else if(a=="mclose")$("mod").classList.remove("on");
+  else if(a=="del")el.closest(".mr").remove();
+  else if(a=="addrow"){$("rows").insertAdjacentHTML("beforeend",$("mod").dataset.tpl.replace(/&quot;/g,'"'))}
+  else if(a=="msave")msave();
+  else if(a=="reset"){
+    if(!el.dataset.sure){el.dataset.sure=1;el.textContent="متأكدة؟ اضغطي تاني للتأكيد";}
+    else{S=fresh();roll();save();$("mod").classList.remove("on");render();toast("اتعمل ريست للبيانات")}
+  }
+});
+$("mod").addEventListener("click",e=>{if(e.target.id=="mod")e.target.classList.remove("on")});
+document.addEventListener("keydown",e=>{if(e.key=="Escape")$("mod").classList.remove("on")});
+
+roll();render();
+</script>
+</body>
+</html>
